@@ -1,0 +1,973 @@
+[
+  {
+    "id": "test-123",
+    "customerName": "Test Patient",
+    "status": "new",
+    "updatedAt": "2026-10-19T22:57:38.541Z",
+    "createdAt": "2026-10-19T22:57:38.541Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-19T22:57:38.541Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-RACE-1792270328790",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:52:09.156Z",
+    "createdAt": "2026-10-17T20:52:08.791Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:52:08.791Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:52:09.155Z",
+        "changedBy": "مشرف B",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 500 ج.م"
+      }
+    ],
+    "confirmedPrice": 500
+  },
+  {
+    "id": "TEST-INVALID-1792270328789",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:52:08.790Z",
+    "createdAt": "2026-10-17T20:52:08.790Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:52:08.790Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792270327192",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T20:52:07.192Z",
+    "updatedAt": "2026-10-17T20:52:08.603Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:52:07.194Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:52:08.603Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792270140581",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:49:00.948Z",
+    "createdAt": "2026-10-17T20:49:00.581Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:49:00.581Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:49:00.947Z",
+        "changedBy": "مشرف A",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 300 ج.م"
+      }
+    ],
+    "confirmedPrice": 300
+  },
+  {
+    "id": "TEST-INVALID-1792270140580",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:49:00.580Z",
+    "createdAt": "2026-10-17T20:49:00.580Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:49:00.580Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792270138933",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T20:48:58.933Z",
+    "updatedAt": "2026-10-17T20:49:00.225Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:48:58.934Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:49:00.225Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792270069832",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:47:49.842Z",
+    "createdAt": "2026-10-17T20:47:49.833Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:47:49.833Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:47:49.841Z",
+        "changedBy": "مشرف A",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 300 ج.م"
+      }
+    ],
+    "confirmedPrice": 300
+  },
+  {
+    "id": "TEST-INVALID-1792270069831",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:47:49.832Z",
+    "createdAt": "2026-10-17T20:47:49.832Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:47:49.832Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792270069412",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T20:47:49.412Z",
+    "updatedAt": "2026-10-17T20:47:49.809Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:47:49.413Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:47:49.809Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792268903568",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:28:23.576Z",
+    "createdAt": "2026-10-17T20:28:23.568Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:28:23.568Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:28:23.576Z",
+        "changedBy": "مشرف A",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 300 ج.م"
+      }
+    ],
+    "confirmedPrice": 300
+  },
+  {
+    "id": "TEST-INVALID-1792268903567",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T20:28:23.567Z",
+    "createdAt": "2026-10-17T20:28:23.567Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:28:23.567Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792268903153",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T20:28:23.153Z",
+    "updatedAt": "2026-10-17T20:28:23.544Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:28:23.154Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T20:28:23.544Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792246673390",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:17:53.449Z",
+    "createdAt": "2026-10-17T14:17:53.390Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:53.390Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:53.449Z",
+        "changedBy": "مشرف B",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 500 ج.م"
+      }
+    ],
+    "confirmedPrice": 500
+  },
+  {
+    "id": "TEST-INVALID-1792246673389",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:17:53.390Z",
+    "createdAt": "2026-10-17T14:17:53.390Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:53.390Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792246673030",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T14:17:53.030Z",
+    "updatedAt": "2026-10-17T14:17:53.338Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:53.032Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:53.338Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792246621406",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:17:01.452Z",
+    "createdAt": "2026-10-17T14:17:01.407Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:01.407Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:01.451Z",
+        "changedBy": "مشرف A",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 300 ج.م"
+      }
+    ],
+    "confirmedPrice": 300
+  },
+  {
+    "id": "TEST-INVALID-1792246621406",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:17:01.406Z",
+    "createdAt": "2026-10-17T14:17:01.406Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:01.406Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792246621025",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T14:17:01.026Z",
+    "updatedAt": "2026-10-17T14:17:01.349Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:01.027Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:17:01.349Z",
+        "changedBy": "المشرف الأول",
+        "note": "اعتماد السعر المعتمد النهائي عبر بوت تيليجرام: 350 ج.م"
+      }
+    ],
+    "confirmedPrice": 350
+  },
+  {
+    "id": "TEST-RACE-1792246581141",
+    "customerName": "اختبار السباك السباق",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:16:21.141Z",
+    "createdAt": "2026-10-17T14:16:21.141Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:16:21.141Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-INVALID-1792246581139",
+    "customerName": "اختبار سعر غير صالح",
+    "phone": "01000000000",
+    "status": "new",
+    "updatedAt": "2026-10-17T14:16:21.139Z",
+    "createdAt": "2026-10-17T14:16:21.139Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:16:21.139Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "TEST-PRICE-1792246580684",
+    "customerName": "اختبار الحماية",
+    "phone": "01000000000",
+    "status": "new",
+    "createdAt": "2026-10-17T14:16:20.684Z",
+    "updatedAt": "2026-10-17T14:16:20.685Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-17T14:16:20.685Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "requestNumber": "ONS-20261017-2920",
+    "serviceId": "srv-1792074424527",
+    "serviceNameAr": "تغيير قسطرة بولية",
+    "serviceNameEn": "Urinary Catheter Replacement",
+    "selectedServices": [
+      {
+        "price": 300,
+        "nameEn": "Urinary Catheter Replacement",
+        "nameAr": "تغيير قسطرة بولية",
+        "serviceId": "srv-1792074424527"
+      }
+    ],
+    "areaId": "area-1792069191552",
+    "areaNameAr": "التجمع الخامس والقاهرة الجديدة",
+    "areaNameEn": "Fifth Settlement & New Cairo",
+    "city": "القاهرة",
+    "governorate": "القاهرة",
+    "addressDetails": "حمزه عادل",
+    "detailedAddress": "حمزه عادل",
+    "nearbyLandmark": "حمزه عادل",
+    "patientName": "حمزه عادل",
+    "customerName": "حمزه عادل",
+    "patientAge": 20,
+    "medicalHistory": "حمزه عادل",
+    "caseDescription": "حمزه عادل",
+    "prescriptionDocumentReference": "/api/documents/presc-1792244983001-fkly5h.jpg",
+    "identityDocumentUrl": "/api/documents/presc-1792244983001-fkly5h.jpg",
+    "identityDocumentName": "1.mp4_snapshot_00.10.800.jpg",
+    "appointmentDate": "2026-10-18",
+    "appointmentTime": "09:00",
+    "preferredDate": "2026-10-18",
+    "preferredTimeSlot": "09:00",
+    "appointmentTimezone": "Africa/Cairo",
+    "requestClassificationAr": "طلب قياسي (مواعيد عمل منتظمة)",
+    "requestClassificationEn": "Standard Request (Regular Hours)",
+    "isNightOrUrgent": false,
+    "phone": "+201008658048",
+    "whatsapp": "+201008658048",
+    "isWhatsappSameAsPhone": true,
+    "preferredContactMethod": "whatsapp",
+    "baseServicePriceMin": 300,
+    "baseServicePriceMax": 600,
+    "applicableSurcharges": [],
+    "estimatedTransportationFee": 80,
+    "travelFee": 80,
+    "estimatedTotalMin": 380,
+    "estimatedTotalMax": 680,
+    "isProvisionalPricing": false,
+    "pricingConfirmationStatus": "provisional",
+    "transportationPaymentStatus": "not_requested",
+    "termsAccepted": true,
+    "notes": "حمزه عادل",
+    "id": "ONS-2026-755891",
+    "status": "new",
+    "isNearestProvidersEnabled": false,
+    "currency": "ج.م",
+    "createdAt": "2026-10-17T14:52:35.891Z",
+    "statusHistory": [
+      {
+        "status": "new",
+        "changedBy": "System (Customer Web Order)",
+        "timestamp": "2026-10-17T14:52:35.891Z",
+        "note": "تم إرسال الطلب واعتماده في قاعدة البيانات عبر الموقع"
+      }
+    ],
+    "paymentSettings": {},
+    "updatedAt": "2026-10-17T14:10:29.599Z",
+    "internalNotes": [],
+    "whatsappNotificationLog": {
+      "lastAttemptAt": "2026-10-17T14:52:37.358Z",
+      "status": "not_configured",
+      "recipientB": {
+        "error": "Recipient B phone number is not configured in settings.",
+        "recipientId": "recipient_b",
+        "phone": "",
+        "status": "not_configured",
+        "timestamp": "2026-10-17T13:49:54.224Z",
+        "attempts": 1
+      },
+      "recipientA": {
+        "timestamp": "2026-10-17T13:49:54.224Z",
+        "error": "Recipient A phone number is not configured in settings.",
+        "attempts": 1,
+        "status": "not_configured",
+        "phone": "",
+        "recipientId": "recipient_a"
+      },
+      "overallError": "Recipient A phone number is not configured in settings."
+    },
+    "telegramNotificationSent": true,
+    "telegramNotificationLog": {
+      "messageId": "112, 114",
+      "recommendedProvidersCount": 0,
+      "lastAttemptAt": "2026-10-17T15:09:51.532Z",
+      "chatId": "86••••10, 89••••80",
+      "status": "sent"
+    },
+    "whatsappNotificationSent": false,
+    "whatsappNotificationTimestamp": "2026-10-17T14:52:37.358Z",
+    "telegramNotificationTimestamp": "2026-10-17T15:09:51.533Z"
+  },
+  {
+    "id": "ONS-2026-040019",
+    "estimatedTotalMin": 518,
+    "requestNumber": "ONS-20261017-7510",
+    "customerName": "ؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "areaId": "area-1792069191552",
+    "areaNameAr": "التجمع الخامس والقاهرة الجديدة",
+    "travelFee": 80,
+    "createdAt": "2026-10-16T23:24:00.019Z",
+    "telegramNotificationSent": true,
+    "patientName": "ؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "whatsapp": "+201008658048",
+    "appointmentTime": "22:00",
+    "notes": "ؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "estimatedTotalMax": 1018,
+    "baseServicePriceMin": 350,
+    "identityDocumentUrl": "/api/documents/presc-1792189266027-q05bdy.jpg",
+    "nearbyLandmark": "ؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "patientAge": 120,
+    "areaNameEn": "Fifth Settlement & New Cairo",
+    "telegramNotificationLog": {
+      "messageId": "95",
+      "recommendedProvidersCount": 0,
+      "chatId": "12••••89, 98••••21, 86••••10",
+      "status": "sent",
+      "lastAttemptAt": "2026-10-16T23:24:01.983Z",
+      "error": "(123456789): Bad Request: chat not found | (987654321): Bad Request: chat not found"
+    },
+    "isWhatsappSameAsPhone": true,
+    "preferredDate": "2026-10-17",
+    "governorate": "القاهرة",
+    "appointmentTimezone": "Africa/Cairo",
+    "currency": "ج.م",
+    "applicableSurcharges": [
+      {
+        "labelAr": "رسوم طلب مستعجل (نفس اليوم) +15%",
+        "percentage": 15,
+        "amountMax": 113,
+        "labelEn": "Urgent Same-Day Surcharge +15%",
+        "amountMin": 53,
+        "code": "urgent_sameday"
+      },
+      {
+        "amountMax": 75,
+        "labelEn": "Late-Night Surcharge (After 10 PM) +10%",
+        "amountMin": 35,
+        "labelAr": "رسوم خدمة ليلية (بعد 10 مساءً) +10%",
+        "percentage": 10,
+        "code": "latenight"
+      }
+    ],
+    "prescriptionDocumentReference": "/api/documents/presc-1792189266027-q05bdy.jpg",
+    "baseServicePriceMax": 750,
+    "whatsappNotificationTimestamp": "2026-10-16T23:24:02.067Z",
+    "caseDescription": "ؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "pricingConfirmationStatus": "provisional",
+    "serviceNameAr": "تركيب قسطرة بولية لأول مرة",
+    "addressDetails": "ؤؤؤؤؤ",
+    "phone": "+201008658048",
+    "transportationPaymentStatus": "not_requested",
+    "serviceId": "srv-1792066723779",
+    "telegramNotificationTimestamp": "2026-10-16T23:24:02.067Z",
+    "statusHistory": [
+      {
+        "note": "تم إرسال الطلب واعتماده في قاعدة البيانات عبر الموقع",
+        "timestamp": "2026-10-16T23:24:00.019Z",
+        "changedBy": "System (Customer Web Order)",
+        "status": "new"
+      }
+    ],
+    "requestClassificationEn": "Special Request (Urgent Same-Day Surcharge + Late-Night Surcharge (After 10 PM))",
+    "medicalHistory": "ؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤؤ",
+    "isNightOrUrgent": true,
+    "preferredTimeSlot": "22:00",
+    "status": "new",
+    "isNearestProvidersEnabled": false,
+    "whatsappNotificationSent": false,
+    "appointmentDate": "2026-10-17",
+    "whatsappNotificationLog": {
+      "overallError": "Recipient A phone number is not configured in settings.",
+      "lastAttemptAt": "2026-10-16T23:24:02.067Z",
+      "recipientA": {
+        "error": "Recipient A phone number is not configured in settings.",
+        "timestamp": "2026-10-16T22:21:20.351Z",
+        "phone": "",
+        "recipientId": "recipient_a",
+        "attempts": 1,
+        "status": "not_configured"
+      },
+      "recipientB": {
+        "timestamp": "2026-10-16T22:21:20.351Z",
+        "phone": "",
+        "status": "not_configured",
+        "recipientId": "recipient_b",
+        "attempts": 1,
+        "error": "Recipient B phone number is not configured in settings."
+      },
+      "status": "not_configured"
+    },
+    "detailedAddress": "ؤؤؤؤؤ",
+    "isProvisionalPricing": false,
+    "identityDocumentName": "eb.jpg",
+    "selectedServices": [
+      {
+        "nameEn": "First-Time Urinary Catheter Insertion",
+        "nameAr": "تركيب قسطرة بولية لأول مرة",
+        "serviceId": "srv-1792066723779",
+        "price": 350
+      }
+    ],
+    "estimatedTransportationFee": 80,
+    "city": "القاهرة",
+    "requestClassificationAr": "طلب إضافي (رسوم طلب مستعجل (نفس اليوم) + رسوم خدمة ليلية (بعد 10 مساءً))",
+    "serviceNameEn": "First-Time Urinary Catheter Insertion",
+    "termsAccepted": true,
+    "preferredContactMethod": "whatsapp",
+    "paymentSettings": {},
+    "updatedAt": "2026-10-17T13:48:43.631Z",
+    "internalNotes": []
+  },
+  {
+    "id": "ONS-DASH-100",
+    "requestNumber": "ONS-DASH-100",
+    "customerName": "سارة أسامة",
+    "phone": "01123456789",
+    "whatsapp": "01123456789",
+    "serviceNameAr": "علاج طبيعي للظهر",
+    "appointmentDate": "2026-10-25",
+    "appointmentTime": "15:30",
+    "travelFee": 60,
+    "status": "new",
+    "areaNameAr": "مدينة نصر",
+    "addressDetails": "شارع عباس العقاد - مدينة نصر",
+    "paymentDetails": {
+      "instaPayAddress": "ons@instapay",
+      "vodafoneCashNumber": "01011112222",
+      "beneficiaryName": "شركة أُنس للرعاية المنزلية"
+    },
+    "updatedAt": "2026-10-16T21:24:56.497Z",
+    "createdAt": "2026-10-16T21:24:56.497Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-16T21:24:56.497Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      }
+    ]
+  },
+  {
+    "id": "ONS-TEST-999",
+    "requestNumber": "ONS-TEST-999",
+    "customerName": "حمزة دياب",
+    "phone": "01012345678",
+    "whatsapp": "01012345678",
+    "serviceNameAr": "خدمة تمريض منزلية",
+    "appointmentDate": "2026-10-20",
+    "appointmentTime": "22:00",
+    "travelFee": 75,
+    "status": "deleted",
+    "areaNameAr": "المعادي",
+    "addressDetails": "شارع 9 - المعادي - القاهرة",
+    "paymentDetails": {
+      "instaPayAddress": "ons@instapay",
+      "vodafoneCashNumber": "01099998888",
+      "beneficiaryName": "شركة أُنس للرعاية الصحية"
+    },
+    "updatedAt": "2026-10-16T21:13:29.209Z",
+    "createdAt": "2026-10-16T21:13:29.197Z",
+    "internalNotes": [],
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-16T21:13:29.197Z",
+        "changedBy": "System",
+        "note": "طلب جديد مسجل في النظام"
+      },
+      {
+        "status": "new",
+        "timestamp": "2026-10-16T21:13:29.207Z",
+        "changedBy": "د. أحمد",
+        "note": "تأكيد دفع رسوم الانتقال بواسطة المشرف (د. أحمد)"
+      },
+      {
+        "status": "in_progress",
+        "timestamp": "2026-10-16T21:13:29.208Z",
+        "changedBy": "د. أحمد",
+        "note": "بدء التنفيذ"
+      },
+      {
+        "status": "deleted",
+        "timestamp": "2026-10-16T21:13:29.209Z",
+        "changedBy": "د. أحمد",
+        "note": "تم حذف الطلب نهائياً بواسطة المشرف (د. أحمد)"
+      }
+    ],
+    "transportationPaymentStatus": "تم دفع رسوم الانتقال",
+    "travelFeePaid": true,
+    "isDeleted": true
+  },
+  {
+    "requestNumber": "ONS-20261016-1060",
+    "serviceId": "srv-1792066723779",
+    "serviceNameAr": "تركيب قسطرة بولية لأول مرة",
+    "serviceNameEn": "First-Time Urinary Catheter Insertion",
+    "selectedServices": [
+      {
+        "nameAr": "تركيب قسطرة بولية لأول مرة",
+        "nameEn": "First-Time Urinary Catheter Insertion",
+        "price": 350,
+        "serviceId": "srv-1792066723779"
+      }
+    ],
+    "areaId": "area-1792069191552",
+    "areaNameAr": "التجمع الخامس والقاهرة الجديدة",
+    "areaNameEn": "Fifth Settlement & New Cairo",
+    "city": "القاهرة",
+    "governorate": "القاهرة",
+    "addressDetails": "طز",
+    "detailedAddress": "طز",
+    "nearbyLandmark": "طز",
+    "patientName": "المدير",
+    "customerName": "المدير",
+    "patientAge": 20,
+    "medicalHistory": "طز",
+    "caseDescription": "طز",
+    "prescriptionDocumentReference": "/api/documents/presc-1792183866449-qtpfba.jpg",
+    "identityDocumentUrl": "/api/documents/presc-1792183866449-qtpfba.jpg",
+    "identityDocumentName": "WhatsApp Image 2026-09-09 at 7.56.51 PM.jpeg",
+    "appointmentDate": "2026-10-17",
+    "appointmentTime": "09:00",
+    "preferredDate": "2026-10-17",
+    "preferredTimeSlot": "09:00",
+    "appointmentTimezone": "Africa/Cairo",
+    "requestClassificationAr": "طلب إضافي (رسوم طلب مستعجل (نفس اليوم))",
+    "requestClassificationEn": "Special Request (Urgent Same-Day Surcharge)",
+    "isNightOrUrgent": true,
+    "phone": "+201008658048",
+    "whatsapp": "+201008658048",
+    "isWhatsappSameAsPhone": true,
+    "preferredContactMethod": "whatsapp",
+    "baseServicePriceMin": 350,
+    "baseServicePriceMax": 750,
+    "applicableSurcharges": [
+      {
+        "amountMin": 53,
+        "code": "urgent_sameday",
+        "labelAr": "رسوم طلب مستعجل (نفس اليوم) +15%",
+        "amountMax": 113,
+        "percentage": 15,
+        "labelEn": "Urgent Same-Day Surcharge +15%"
+      }
+    ],
+    "estimatedTransportationFee": 80,
+    "travelFee": 80,
+    "estimatedTotalMin": 483,
+    "estimatedTotalMax": 943,
+    "isProvisionalPricing": false,
+    "pricingConfirmationStatus": "provisional",
+    "transportationPaymentStatus": "not_requested",
+    "termsAccepted": true,
+    "notes": "طز",
+    "id": "ONS-2026-660516",
+    "status": "new",
+    "currency": "ج.م",
+    "createdAt": "2026-10-16T21:54:20.516Z",
+    "statusHistory": [
+      {
+        "changedBy": "System (Customer Web Order)",
+        "note": "تم إرسال الطلب واعتماده في قاعدة البيانات عبر الموقع",
+        "status": "new",
+        "timestamp": "2026-10-16T21:54:20.516Z"
+      }
+    ],
+    "updatedAt": "2026-10-16T21:14:18.678Z",
+    "internalNotes": [],
+    "telegramNotificationSent": true,
+    "telegramNotificationLog": {
+      "lastAttemptAt": "2026-10-16T22:12:46.449Z",
+      "status": "sent",
+      "messageId": "75, 77",
+      "chatId": "86••••10, 89••••80",
+      "recommendedProvidersCount": 0
+    },
+    "whatsappNotificationTimestamp": "2026-10-16T21:54:21.750Z",
+    "whatsappNotificationSent": false,
+    "telegramNotificationTimestamp": "2026-10-16T22:12:46.449Z",
+    "whatsappNotificationLog": {
+      "lastAttemptAt": "2026-10-16T21:54:21.750Z",
+      "recipientB": {
+        "timestamp": "2026-10-16T20:51:40.047Z",
+        "attempts": 1,
+        "status": "not_configured",
+        "phone": "",
+        "error": "Recipient B phone number is not configured in settings.",
+        "recipientId": "recipient_b"
+      },
+      "recipientA": {
+        "timestamp": "2026-10-16T20:51:40.047Z",
+        "error": "Recipient A phone number is not configured in settings.",
+        "phone": "",
+        "status": "not_configured",
+        "attempts": 1,
+        "recipientId": "recipient_a"
+      },
+      "overallError": "Recipient A phone number is not configured in settings.",
+      "status": "not_configured"
+    },
+    "paymentSettings": {}
+  },
+  {
+    "requestNumber": "ONS-20261016-8457",
+    "serviceId": "srv-1792074424527",
+    "serviceNameAr": "تغيير قسطرة بولية",
+    "serviceNameEn": "Urinary Catheter Replacement",
+    "selectedServices": [
+      {
+        "serviceId": "srv-1792074424527",
+        "nameAr": "تغيير قسطرة بولية",
+        "price": 300,
+        "nameEn": "Urinary Catheter Replacement"
+      }
+    ],
+    "areaId": "area-1792069335966",
+    "areaNameAr": "مدينة نصر",
+    "areaNameEn": "Nasr City",
+    "city": "القاهرة",
+    "governorate": "القاهرة",
+    "addressDetails": "جوا المول",
+    "detailedAddress": "جوا المول",
+    "nearbyLandmark": "جنب الاستاد",
+    "patientName": "حمزه عادل محمود",
+    "customerName": "حمزه عادل محمود",
+    "patientAge": 20,
+    "medicalHistory": "عايز يتجوز",
+    "caseDescription": "ابعتوا عروسه",
+    "prescriptionDocumentReference": "/api/documents/presc-1792181729158-7q88ma.jpg",
+    "identityDocumentUrl": "/api/documents/presc-1792181729158-7q88ma.jpg",
+    "identityDocumentName": "WhatsApp Image 2026-09-09 at 7.56.51 PM.jpeg",
+    "appointmentDate": "2026-10-18",
+    "appointmentTime": "15:00",
+    "preferredDate": "2026-10-18",
+    "preferredTimeSlot": "15:00",
+    "appointmentTimezone": "Africa/Cairo",
+    "requestClassificationAr": "طلب قياسي (مواعيد عمل منتظمة)",
+    "requestClassificationEn": "Standard Request (Regular Hours)",
+    "isNightOrUrgent": false,
+    "phone": "+201008658048",
+    "whatsapp": "+201008658048",
+    "isWhatsappSameAsPhone": true,
+    "preferredContactMethod": "whatsapp",
+    "baseServicePriceMin": 300,
+    "baseServicePriceMax": 600,
+    "applicableSurcharges": [],
+    "estimatedTransportationFee": 80,
+    "travelFee": 80,
+    "estimatedTotalMin": 380,
+    "estimatedTotalMax": 680,
+    "isProvisionalPricing": false,
+    "pricingConfirmationStatus": "provisional",
+    "transportationPaymentStatus": "not_requested",
+    "termsAccepted": true,
+    "notes": "ابعتوا عروسه",
+    "id": "ONS-2026-503019",
+    "status": "new",
+    "currency": "ج.م",
+    "createdAt": "2026-10-16T21:18:23.019Z",
+    "statusHistory": [
+      {
+        "status": "new",
+        "timestamp": "2026-10-16T21:18:23.019Z",
+        "changedBy": "System (Customer Web Order)",
+        "note": "تم إرسال الطلب واعتماده في قاعدة البيانات عبر الموقع"
+      }
+    ],
+    "updatedAt": "2026-10-16T20:24:34.475Z",
+    "internalNotes": [],
+    "whatsappNotificationTimestamp": "2026-10-16T21:18:24.502Z",
+    "whatsappNotificationLog": {
+      "status": "not_configured",
+      "overallError": "Recipient A phone number is not configured in settings.",
+      "recipientA": {
+        "phone": "",
+        "error": "Recipient A phone number is not configured in settings.",
+        "attempts": 1,
+        "status": "not_configured",
+        "recipientId": "recipient_a",
+        "timestamp": "2026-10-16T20:15:42.804Z"
+      },
+      "lastAttemptAt": "2026-10-16T21:18:24.502Z",
+      "recipientB": {
+        "error": "Recipient B phone number is not configured in settings.",
+        "status": "not_configured",
+        "attempts": 1,
+        "phone": "",
+        "recipientId": "recipient_b",
+        "timestamp": "2026-10-16T20:15:42.804Z"
+      }
+    },
+    "whatsappNotificationSent": false,
+    "telegramNotificationSent": true,
+    "telegramNotificationTimestamp": "2026-10-16T21:20:32.656Z",
+    "telegramNotificationLog": {
+      "chatId": "86••••10, 89••••80",
+      "messageId": "63, 64",
+      "error": "(123456789): Bad Request: chat not found | (987654321): Bad Request: chat not found",
+      "lastAttemptAt": "2026-10-16T21:20:32.654Z",
+      "recommendedProvidersCount": 0,
+      "status": "sent"
+    }
+  }
+]

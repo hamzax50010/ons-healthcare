@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "botToken": "123456:ABC-DEF1234ghIkl-zyx57W2v1u12345678",
+  "chatId": "8637926310",
+  "chatTitle": "",
+  "botUsername": "test115285251_bot",
+  "lastTestedAt": "2026-10-16T20:10:32.579Z",
+  "lastTestStatus": "connected",
+  "lastTestMessageId": "59",
+  "admin1": {
+    "id": "10100223",
+    "name": "أحمد الإداري",
+    "role": "owner",
+    "isVerified": true
+  },
+  "admin2": {
+    "id": "8975965980",
+    "name": "Colleague Admin",
+    "role": "colleague",
+    "isVerified": true,
+    "addedAt": "2026-10-16T20:10:22.632Z"
+  },
+  "authorizedUserIds": [
+    "10100223",
+    "8975965980"
+  ],
+  "pollingEnabled": true,
+  "lastUpdateId": 0
+}

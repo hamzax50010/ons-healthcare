@@ -1,0 +1,182 @@
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net: Default Deny Catch-All
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helper Functions ---
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isEmailVerified() {
+      return isSignedIn()
+        && (
+          'email_verified' in request.auth.token
+            ? request.auth.token.email_verified == true
+            : true
+        );
+    }
+
+    // Explicit owner email allowlist
+    function isAllowedAdminEmail() {
+      return isSignedIn()
+        && 'email' in request.auth.token
+        && (
+          request.auth.token.email == 'hamzadiab500@gmail.com'
+          || request.auth.token.email.matches('(?i)^hamzadiab500@gmail\\.com$')
+        );
+    }
+
+    // Role-based Administrator access
+    function isAdmin() {
+      return isAllowedAdminEmail()
+        || (
+          isSignedIn()
+          && exists(
+            /databases/$(database)/documents/admins/$(request.auth.uid)
+          )
+        );
+    }
+
+    function isValidId(id) {
+      return id is string
+        && id.size() > 0
+        && id.size() <= 128
+        && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // --- Admin Directory ---
+    match /admins/{adminId} {
+      allow get: if isSignedIn()
+        && (request.auth.uid == adminId || isAdmin());
+
+      allow list: if isAdmin();
+
+      allow create, update, delete: if isAdmin()
+        && isValidId(adminId);
+    }
+
+    // --- Site Settings ---
+    match /siteSettings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(settingId);
+    }
+
+    // --- Site Content ---
+    match /siteContent/{contentId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(contentId);
+    }
+
+    // --- Service Categories ---
+    match /serviceCategories/{categoryId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(categoryId);
+    }
+
+    // --- Services ---
+    match /services/{serviceId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(serviceId);
+    }
+
+    // --- Service Areas ---
+    match /serviceAreas/{areaId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(areaId);
+    }
+
+    // --- Reviews ---
+    match /reviews/{reviewId} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow write: if isAdmin() && isValidId(reviewId);
+    }
+
+    // --- Customer Requests ---
+    function isValidStatusTransition(oldStatus, newStatus) {
+      return oldStatus == newStatus
+        || (oldStatus == 'new' && (newStatus == 'awaiting_customer_confirmation' || newStatus == 'cancelled'))
+        || (oldStatus == 'under_review' && (newStatus == 'awaiting_customer_confirmation' || newStatus == 'cancelled'))
+        || (oldStatus == 'awaiting_customer_confirmation' && (newStatus == 'confirmed_scheduled' || newStatus == 'cancelled'))
+        || (oldStatus == 'awaiting_confirmation' && (newStatus == 'confirmed_scheduled' || newStatus == 'cancelled'))
+        || (oldStatus == 'confirmed_scheduled' && (newStatus == 'field_in_progress' || newStatus == 'cancelled'))
+        || (oldStatus == 'confirmed' && (newStatus == 'field_in_progress' || newStatus == 'cancelled'))
+        || (oldStatus == 'field_in_progress' && (newStatus == 'completed' || newStatus == 'cancelled'))
+        || (oldStatus == 'in_progress' && (newStatus == 'completed' || newStatus == 'cancelled'));
+    }
+
+    function isConfirmedPriceImmutable() {
+      return !('confirmedPrice' in resource.data)
+        || resource.data.confirmedPrice == null
+        || ('confirmedPrice' in request.resource.data && request.resource.data.confirmedPrice == resource.data.confirmedPrice);
+    }
+
+    // --- Customer Requests ---
+    // Public CREATE with validation.
+    // Only admins can read, list, update, or delete non-completed requests.
+    match /customerRequests/{requestId} {
+      allow get: if isAdmin() && isValidId(requestId);
+      allow list: if isAdmin();
+      allow delete: if isAdmin()
+        && isValidId(requestId)
+        && resource.data.status != 'completed';
+      allow update: if isAdmin()
+        && isValidId(requestId)
+        && isValidStatusTransition(existing().status, incoming().status)
+        && isConfirmedPriceImmutable();
+
+      allow create: if isValidId(requestId)
+        && incoming().serviceId is string
+        && incoming().serviceId.size() > 0
+        && incoming().serviceId.size() <= 100
+        && incoming().areaId is string
+        && incoming().areaId.size() > 0
+        && incoming().areaId.size() <= 100
+        && incoming().customerName is string
+        && incoming().customerName.size() >= 2
+        && incoming().customerName.size() <= 120
+        && incoming().phone is string
+        && incoming().phone.size() >= 8
+        && incoming().phone.size() <= 30
+        && incoming().addressDetails is string
+        && incoming().addressDetails.size() > 0
+        && incoming().addressDetails.size() <= 500
+        && incoming().termsAccepted == true
+        && incoming().status == 'new';
+    }
+
+    // --- Service Providers ---
+    match /serviceProviders/{providerId} {
+      allow read, write: if isAdmin() && isValidId(providerId);
+    }
+
+    // --- Integrations ---
+    match /integrations/{integrationId} {
+      allow read, write: if isAdmin() && isValidId(integrationId);
+    }
+
+    // --- Audit Logs ---
+    match /auditLogs/{logId} {
+      allow read: if isAdmin();
+
+      allow create, delete: if isAdmin()
+        && isValidId(logId);
+
+      allow update: if false;
+    }
+  }
+}
